@@ -38,7 +38,7 @@ print(float("5.67"))
 print(int(5.67))
 print(float(2))
 print(entero + decimal)
-
+print()
 print(bool(entero))
 print(bool(decimal))
 print(bool(texto1))
