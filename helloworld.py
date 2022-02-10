@@ -9,11 +9,16 @@ else:
 name = input("Para empezar, como te llamas? ")
 print("Bienvenid@ " + name)
 print()
-print("Me gustaria conocerte, ¿Que tal una ronda de preguntas?")
+print("Me gustaria conocerte, ¿Que tal una ronda de preguntas?")  
+#### to do
+# informacion tiene que ser correcta (estar validada) ej: age tiene que ser numero, altura float etc
+# 
 age = input("Que edad tienes? ")
 nation = input("Donde creciste? ")
 height = input("Cual es tu altura? En metros, porfavor. ")
-birthday = input("Cuantas semanas quedan hasta tu cumpleaños? ")  # pidieras dia y mes de cumpleaños
+birthday_week = input("Cuantas semanas quedan hasta tu cumpleaños? ")  # pidieras dia y mes de cumpleañoscheck
+birthday_day = input("En que dia naciste? ")
+birthday_month = input("En que mes naciste? ")
 breath = input("Estas respirando, verdad? ") # Aceptar una respuesta valida
 
 # is_breathing = True o False
@@ -24,7 +29,11 @@ print("Tu nombre es " + str(name))
 print("Tu edad es " + str(age) + " años")
 print("Conozco incluso tu altura, mides " + str(height) + " metros") # 1.55 Exactamente 2 decimales
 print("Creciste en un maravilloso lugar llamado " + str(nation))
-print("De hecho, somos grandes amigos, ya he marcado las " + str(birthday) + " semanas que quedan hasta tu cumpleaños en mi calendario") # los dias que quedan
+print("De hecho, somos grandes amigos, ya he marcado las " + str(birthday_week) + " semanas que quedan hasta tu cumpleaños en mi calendario") # los dias que quedan
+import datetime
+daysleft = datetime.datetime(int(birthday_day)) #no funciona:()
+print(daysleft)
+
 if breath == "verdad": # variable deberia ser if is_breathing
     print("Y tenemos cosas en común, ambos respiramos ")
 if breath == "mentira":
